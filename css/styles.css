@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles.css */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-oval {
+    border-radius: 50px; /* Define a borda oval */
+    padding: 8px 20px; /* Ajusta o espaçamento interno */
+    margin: 0 5px; /* Margem entre os botões */
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Header styles */
+.header {
+    padding: 50px 0 0; /* Ajuste para reduzir a distância do topo e remover o padding inferior */
+    background: url('../images/header9.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative; /* Para garantir que o overlay e o texto sejam posicionados corretamente */
+}
+
+/* Ajuste para o container de texto */
+.text-container {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 20px; /* Ajusta a margem superior para mover o texto para cima */
+    padding: 0; /* Remove o padding para posicionar o texto mais próximo ao nav */
+}
+
+/* Background and text styles */
+.bg-cinza {
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    display: inline-block; /* Para garantir que o fundo cubra apenas o texto */
+    color: #f8f9fa; /* Cor do texto em preto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Section styles */
+section {
+    padding: 60px 0;
+}
+
+.social-link {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    display: inline-block; /* Garante que o link ocupe apenas o espaço necessário */
+    margin-bottom: 5px; /* Espaçamento inferior entre os links */
+}
+
+.social-link img {
+    vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+    margin-right: 10px; /* Espaçamento direito entre a imagem e o texto */
+}
+
+section h2 {
+    margin-bottom: 40px;
+    color: #343a40; /* Alteração na cor do título das seções */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; /* Adição de transição suave */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card img {
+    height: 150px;
+    object-fit: contain;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#about .img-fluid {
+    max-width: 200px;
+    border: 5px solid #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #343a40; /* Alterado para uma cor escura */
+    color: #dee2e6;
+    margin-top: auto; /* Para empurrar o footer para o final da página */
+    padding: 20px 0; /* Ajuste o padding conforme necessário */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 0; /* Ajuste para reduzir a distância do topo em dispositivos móveis */
+    }
+}
+
